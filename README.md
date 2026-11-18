@@ -3,6 +3,9 @@
 Repository del team per AIRIC × PMDS. Per lavorare insieme e per il primo push,
 vedere [CONTRIBUTING.md](CONTRIBUTING.md).
 
+Per il contesto degli ambienti locali, degli esperimenti e degli artefatti esclusi,
+leggere [CONTESTO_PER_TEAM_E_LLM.md](CONTESTO_PER_TEAM_E_LLM.md).
+
 **Versione 0.2.1, ricontrollata il 18 novembre 2026: partire dal profilo `competitive`**, mantenendo `exp3` e `gp` come
 alternative da confrontare quando arriveranno le regole. Il nuovo profilo coordina
 domanda, scorte, acquisti e produzione; la configurazione selezionata su dati di
@@ -192,7 +195,7 @@ I risultati verificati della versione consegnata sono in [VERIFICA.md](reports/V
 Il repository include i report selezionati. Le tracce complete e gli snapshot
 si generano localmente in `runs/`, esclusa da Git insieme ad ambienti e cache.
 
-Per riprodurre lo studio con avversari forti e semi nuovi:
+Per ripetere lo studio con avversari forti sui semi fissi del protocollo:
 
 ```powershell
 python scripts/competition_study.py development --out runs/my-development --workers 4
