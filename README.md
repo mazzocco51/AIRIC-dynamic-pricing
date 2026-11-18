@@ -1,4 +1,4 @@
-# Hackathon kit — agenti di mercato adattabili
+# AIRIC-dynamic-pricing
 
 Repository del team per AIRIC × PMDS. Per lavorare insieme e per il primo push,
 vedere [CONTRIBUTING.md](CONTRIBUTING.md).

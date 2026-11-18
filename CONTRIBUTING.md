@@ -29,7 +29,7 @@ README e gitignore sono già presenti localmente. Sostituire l'URL sotto con
 quello del repository creato:
 
 ```bash
-git remote add origin https://github.com/OWNER/REPOSITORY.git
+git remote add origin https://github.com/OWNER/AIRIC-dynamic-pricing.git
 git push -u origin HEAD
 ```
 
