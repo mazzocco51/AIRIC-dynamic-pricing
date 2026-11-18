@@ -1,0 +1,115 @@
+{
+  "version": "0.2.0",
+  "versions": {
+    "kit": "0.2.0",
+    "python": "3.12.8",
+    "numpy": "2.2.6",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.0",
+    "pytest": "9.1.1"
+  },
+  "code_sha256": "da35eea49911a838851c9616e9a3dc64fbde400c9608f6f83a88ef10f8c22f07",
+  "tests": {
+    "full_passed": 157,
+    "minimal_passed": 155,
+    "minimal_skipped": 2
+  },
+  "development_runs": 112,
+  "evaluation_runs": 580,
+  "invalid_actions": 0,
+  "aggregates": {
+    "baseline:default": {
+      "runs": 80,
+      "profit_mean": 16.660774901882785,
+      "win_share": 0.0125
+    },
+    "baseline:strong": {
+      "runs": 60,
+      "profit_mean": 3.485145187735149,
+      "win_share": 0.0
+    },
+    "exp3:default": {
+      "runs": 80,
+      "profit_mean": 152.5456454977454,
+      "win_share": 0.2625
+    },
+    "exp3:strong": {
+      "runs": 60,
+      "profit_mean": 13.234434288249968,
+      "win_share": 0.03333333333333333
+    },
+    "gp:default": {
+      "runs": 80,
+      "profit_mean": 194.9298193006007,
+      "win_share": 0.3625
+    },
+    "gp:strong": {
+      "runs": 60,
+      "profit_mean": 24.987889931203824,
+      "win_share": 0.06666666666666667
+    },
+    "competitive:default": {
+      "runs": 80,
+      "profit_mean": 311.6364545732425,
+      "win_share": 0.4625
+    },
+    "competitive:strong": {
+      "runs": 60,
+      "profit_mean": 228.93986018272687,
+      "win_share": 0.4666666666666667
+    }
+  },
+  "release_replays": [
+    {
+      "case": "runs\\audit-release-traces\\default\\stable",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "case": "runs\\audit-release-traces\\default\\shock",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "case": "runs\\audit-release-traces\\default\\scarcity",
+      "verified_decisions": 240,
+      "state_match": true
+    },
+    {
+      "case": "runs\\audit-release-traces\\default\\aggressive",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "case": "runs\\audit-release-traces\\strong\\stable",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "case": "runs\\audit-release-traces\\strong\\shock",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "case": "runs\\audit-release-traces\\strong\\scarcity",
+      "verified_decisions": 240,
+      "state_match": true
+    },
+    {
+      "case": "runs\\audit-release-traces\\baseline",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "case": "runs\\audit-release-traces\\exp3",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "case": "runs\\audit-release-traces\\gp",
+      "verified_decisions": 480,
+      "state_match": true
+    }
+  ]
+}

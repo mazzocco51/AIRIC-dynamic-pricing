@@ -1,0 +1,8 @@
+[market]
+auction = "second"
+budget_mode = "fixed"
+fixed_budget = 80.0
+
+[agent]
+pricing = "swucb"
+buying = "pacing"

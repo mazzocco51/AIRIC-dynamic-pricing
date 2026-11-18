@@ -1,0 +1,6 @@
+[market]
+auction = "first"
+
+[agent]
+pricing = "swucb"
+buying = "learned"

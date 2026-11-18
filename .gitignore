@@ -1,0 +1,31 @@
+# Python environments and generated files
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+
+# Local runs, traces, checkpoints and temporary experiments
+runs/
+work/
+*.log
+
+# Local credentials/configuration (templates may be committed)
+.env
+.env.*
+!.env.example
+
+# Machine-specific editor/OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini

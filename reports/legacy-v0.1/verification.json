@@ -1,0 +1,131 @@
+{
+  "runs": 680,
+  "invalid_actions": 0,
+  "accounting_verified": true,
+  "tests_main": {
+    "passed": 57,
+    "skipped": 0
+  },
+  "tests_clean_minimal": {
+    "passed": 56,
+    "skipped": 1,
+    "reason": "SciPy optional absent"
+  },
+  "clean_installed_cli_verified": true,
+  "versions": {
+    "kit": "0.1.0",
+    "python": "3.12.8",
+    "numpy": "2.2.6",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.0",
+    "pytest": "9.1.1"
+  },
+  "replays": [
+    {
+      "trace": "runs\\benchmark-release\\baseline\\stable\\evaluation-100000\\trace.jsonl.gz",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "trace": "runs\\benchmark-release\\baseline\\shock\\evaluation-100000\\trace.jsonl.gz",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "trace": "runs\\benchmark-release\\baseline\\scarcity\\evaluation-100000\\trace.jsonl.gz",
+      "verified_decisions": 240,
+      "state_match": true
+    },
+    {
+      "trace": "runs\\benchmark-release\\baseline\\aggressive\\evaluation-100000\\trace.jsonl.gz",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "trace": "runs\\benchmark-release\\adaptive\\stable\\evaluation-100000\\trace.jsonl.gz",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "trace": "runs\\benchmark-release\\adaptive\\shock\\evaluation-100000\\trace.jsonl.gz",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "trace": "runs\\benchmark-release\\adaptive\\scarcity\\evaluation-100000\\trace.jsonl.gz",
+      "verified_decisions": 240,
+      "state_match": true
+    },
+    {
+      "trace": "runs\\benchmark-release\\adaptive\\aggressive\\evaluation-100000\\trace.jsonl.gz",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "trace": "runs\\benchmark-release\\ucb\\stable\\evaluation-100000\\trace.jsonl.gz",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "trace": "runs\\benchmark-release\\ucb\\shock\\evaluation-100000\\trace.jsonl.gz",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "trace": "runs\\benchmark-release\\ucb\\scarcity\\evaluation-100000\\trace.jsonl.gz",
+      "verified_decisions": 240,
+      "state_match": true
+    },
+    {
+      "trace": "runs\\benchmark-release\\ucb\\aggressive\\evaluation-100000\\trace.jsonl.gz",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "trace": "runs\\benchmark-release\\exp3\\stable\\evaluation-100000\\trace.jsonl.gz",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "trace": "runs\\benchmark-release\\exp3\\shock\\evaluation-100000\\trace.jsonl.gz",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "trace": "runs\\benchmark-release\\exp3\\scarcity\\evaluation-100000\\trace.jsonl.gz",
+      "verified_decisions": 240,
+      "state_match": true
+    },
+    {
+      "trace": "runs\\benchmark-release\\exp3\\aggressive\\evaluation-100000\\trace.jsonl.gz",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "trace": "runs\\optional-profiles\\conversion\\stable\\evaluation-100000\\trace.jsonl.gz",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "trace": "runs\\optional-profiles\\gp\\stable\\evaluation-100000\\trace.jsonl.gz",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "trace": "runs\\optional-profiles\\milp\\stable\\evaluation-100000\\trace.jsonl.gz",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "trace": "runs\\first-price-verified\\firstprice\\stable\\evaluation-100000\\trace.jsonl.gz",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "trace": "runs\\pacing-verified\\pacing\\stable\\evaluation-100000\\trace.jsonl.gz",
+      "verified_decisions": 480,
+      "state_match": true
+    }
+  ]
+}

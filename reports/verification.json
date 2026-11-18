@@ -1,0 +1,151 @@
+{
+  "version": "0.2.1",
+  "date": "2026-11-18",
+  "versions": {
+    "kit": "0.2.1",
+    "python": "3.12.8",
+    "numpy": "2.2.6",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.0",
+    "pytest": "9.1.1"
+  },
+  "code_sha256": "6361734b706c27384f047e57304b4561ebf239e5edd57882581153c9539ad7f0",
+  "study_sha256": "84f0a3bdaf565ca2d86091373feba3c6e81e59fe3b1e4c99b4778a8d9d767c48",
+  "tests": {
+    "full_passed": 215,
+    "minimal_passed": 213,
+    "minimal_skipped": 2
+  },
+  "evaluation_runs": 580,
+  "fresh_independent_evaluation": false,
+  "invalid_actions": 0,
+  "aggregates": {
+    "baseline:default": {
+      "runs": 80,
+      "profit_mean": 16.660774901882785,
+      "win_share": 0.0125
+    },
+    "baseline:strong": {
+      "runs": 60,
+      "profit_mean": 3.485145187735149,
+      "win_share": 0.0
+    },
+    "exp3:default": {
+      "runs": 80,
+      "profit_mean": 152.5456454977454,
+      "win_share": 0.2625
+    },
+    "exp3:strong": {
+      "runs": 60,
+      "profit_mean": 13.234434288249947,
+      "win_share": 0.03333333333333333
+    },
+    "gp:default": {
+      "runs": 80,
+      "profit_mean": 194.9298193006007,
+      "win_share": 0.3625
+    },
+    "gp:strong": {
+      "runs": 60,
+      "profit_mean": 24.98788993120374,
+      "win_share": 0.06666666666666667
+    },
+    "competitive:default": {
+      "runs": 80,
+      "profit_mean": 311.6364545732425,
+      "win_share": 0.4625
+    },
+    "competitive:strong": {
+      "runs": 60,
+      "profit_mean": 228.93986018272687,
+      "win_share": 0.4666666666666667
+    }
+  },
+  "release_replays": [
+    {
+      "profile": "baseline",
+      "scenario": "stable",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "profile": "adaptive",
+      "scenario": "stable",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "profile": "ucb",
+      "scenario": "stable",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "profile": "exp3",
+      "scenario": "stable",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "profile": "gp",
+      "scenario": "stable",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "profile": "conversion",
+      "scenario": "stable",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "profile": "firstprice",
+      "scenario": "stable",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "profile": "pacing",
+      "scenario": "stable",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "profile": "milp",
+      "scenario": "stable",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "profile": "competitive",
+      "scenario": "stable",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "profile": "competitive",
+      "scenario": "shock",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "profile": "competitive",
+      "scenario": "scarcity",
+      "verified_decisions": 240,
+      "state_match": true
+    },
+    {
+      "profile": "competitive",
+      "scenario": "aggressive",
+      "verified_decisions": 480,
+      "state_match": true
+    },
+    {
+      "profile": "competitive",
+      "scenario": "crossplay",
+      "verified_decisions": 480,
+      "state_match": true
+    }
+  ]
+}

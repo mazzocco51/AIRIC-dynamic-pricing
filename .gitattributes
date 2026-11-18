@@ -1,0 +1,13 @@
+# Preserve byte hashes of source and configuration across Windows/Linux/macOS.
+* text=auto
+*.py text eol=lf
+*.toml text eol=lf
+# These audited files include CRLF bytes: preserve their recorded hashes.
+hackathon_kit/learners.py -text
+configs/competitive.toml -text
+*.md text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf
+*.csv text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf

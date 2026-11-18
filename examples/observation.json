@@ -1,0 +1,17 @@
+{
+  "observation": {
+    "decision_id": "example:auction:0",
+    "turn": 0,
+    "phase": "auction",
+    "cash": 150.0,
+    "raw": {"metal": 0, "plastic": 0},
+    "stock": {"widget": 0, "gadget": 0},
+    "capacity": 5,
+    "raw_cost": {"metal": 2.0, "plastic": 1.0},
+    "stock_cost": {"widget": 0.0, "gadget": 0.0},
+    "resource": "metal",
+    "price_min": 5.0,
+    "price_max": 30.0
+  },
+  "feedback": []
+}

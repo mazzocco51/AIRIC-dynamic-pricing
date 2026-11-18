@@ -1,0 +1,6407 @@
+{
+  "stage": "evaluation",
+  "seeds": [
+    300000,
+    300001,
+    300002,
+    300003,
+    300004,
+    300005,
+    300006,
+    300007,
+    300008,
+    300009,
+    300010,
+    300011,
+    300012,
+    300013,
+    300014,
+    300015,
+    300016,
+    300017,
+    300018,
+    300019
+  ],
+  "versions": {
+    "kit": "0.2.1",
+    "python": "3.12.8",
+    "numpy": "2.2.6",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.0",
+    "pytest": "9.1.1"
+  },
+  "code_sha256": "6361734b706c27384f047e57304b4561ebf239e5edd57882581153c9539ad7f0",
+  "study_sha256": "84f0a3bdaf565ca2d86091373feba3c6e81e59fe3b1e4c99b4778a8d9d767c48",
+  "resolved_matchups": {
+    "baseline": {
+      "default": {
+        "stable": [
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "fixed",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "random",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "reactive",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          }
+        ],
+        "shock": [
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "fixed",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "random",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "reactive",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          }
+        ],
+        "scarcity": [
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "fixed",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "random",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "reactive",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          }
+        ],
+        "aggressive": [
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "fixed",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.2,
+              "target_stock": 5,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 1.0,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "random",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.2,
+              "target_stock": 5,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 1.0,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "reactive",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.2,
+              "target_stock": 5,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 1.0,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          }
+        ]
+      },
+      "strong": {
+        "stable": [
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "exp3ix",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "gpucb",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "inventory",
+              "buying": "planned",
+              "production": "planned",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          }
+        ],
+        "shock": [
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "exp3ix",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "gpucb",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "inventory",
+              "buying": "planned",
+              "production": "planned",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          }
+        ],
+        "scarcity": [
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "exp3ix",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "gpucb",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "inventory",
+              "buying": "planned",
+              "production": "planned",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          }
+        ]
+      }
+    },
+    "exp3": {
+      "default": {
+        "stable": [
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "fixed",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "random",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "reactive",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          }
+        ],
+        "shock": [
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "fixed",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "random",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "reactive",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          }
+        ],
+        "scarcity": [
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "fixed",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "random",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "reactive",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          }
+        ],
+        "aggressive": [
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "fixed",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.2,
+              "target_stock": 5,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 1.0,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "random",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.2,
+              "target_stock": 5,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 1.0,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "reactive",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.2,
+              "target_stock": 5,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 1.0,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          }
+        ]
+      },
+      "strong": {
+        "stable": [
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "exp3ix",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "gpucb",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "inventory",
+              "buying": "planned",
+              "production": "planned",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          }
+        ],
+        "shock": [
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "exp3ix",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "gpucb",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "inventory",
+              "buying": "planned",
+              "production": "planned",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          }
+        ],
+        "scarcity": [
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "exp3ix",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "gpucb",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "inventory",
+              "buying": "planned",
+              "production": "planned",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          }
+        ]
+      }
+    },
+    "gp": {
+      "default": {
+        "stable": [
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "fixed",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "random",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "reactive",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          }
+        ],
+        "shock": [
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "fixed",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "random",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "reactive",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          }
+        ],
+        "scarcity": [
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "fixed",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "random",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "reactive",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          }
+        ],
+        "aggressive": [
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "fixed",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.2,
+              "target_stock": 5,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 1.0,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "random",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.2,
+              "target_stock": 5,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 1.0,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "reactive",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.2,
+              "target_stock": 5,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 1.0,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          }
+        ]
+      },
+      "strong": {
+        "stable": [
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "exp3ix",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "gpucb",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "inventory",
+              "buying": "planned",
+              "production": "planned",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          }
+        ],
+        "shock": [
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "exp3ix",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "gpucb",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "inventory",
+              "buying": "planned",
+              "production": "planned",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          }
+        ],
+        "scarcity": [
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "exp3ix",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "gpucb",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "inventory",
+              "buying": "planned",
+              "production": "planned",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          }
+        ]
+      }
+    },
+    "competitive": {
+      "default": {
+        "stable": [
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "fixed",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "random",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "reactive",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          }
+        ],
+        "shock": [
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "fixed",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "random",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "reactive",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          }
+        ],
+        "scarcity": [
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "fixed",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "random",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "reactive",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          }
+        ],
+        "aggressive": [
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "fixed",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.2,
+              "target_stock": 5,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 1.0,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "random",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.2,
+              "target_stock": 5,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 1.0,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "reactive",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.2,
+              "target_stock": 5,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 1.0,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          }
+        ]
+      },
+      "strong": {
+        "stable": [
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "exp3ix",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "gpucb",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "inventory",
+              "buying": "planned",
+              "production": "planned",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          }
+        ],
+        "shock": [
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "exp3ix",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "gpucb",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "inventory",
+              "buying": "planned",
+              "production": "planned",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          }
+        ],
+        "scarcity": [
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "exp3ix",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "gpucb",
+              "buying": "prudent",
+              "production": "greedy",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "inventory",
+              "buying": "planned",
+              "production": "planned",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          }
+        ]
+      },
+      "selfplay": {
+        "stable": [
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "inventory",
+              "buying": "planned",
+              "production": "planned",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "inventory",
+              "buying": "planned",
+              "production": "planned",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          },
+          {
+            "market": {
+              "turns": 40,
+              "initial_cash": 150.0,
+              "capacity": 5,
+              "auction": "second",
+              "budget_mode": "replenishing",
+              "fixed_budget": 80.0,
+              "reserve": {
+                "metal": 2.0,
+                "plastic": 1.0
+              },
+              "initial_raw": {
+                "metal": 2,
+                "plastic": 2
+              },
+              "supply": {
+                "metal": 5,
+                "plastic": 5
+              },
+              "recipes": {
+                "widget": {
+                  "metal": 1,
+                  "plastic": 1
+                },
+                "gadget": {
+                  "metal": 2,
+                  "plastic": 1
+                }
+              },
+              "production_cost": {
+                "widget": 1.0,
+                "gadget": 1.5
+              },
+              "price_min": 5.0,
+              "price_max": 30.0,
+              "price_tick": 0.01,
+              "customers": 24,
+              "conversion_feedback": true,
+              "holding_cost": 0.02
+            },
+            "agent": {
+              "pricing": "inventory",
+              "buying": "planned",
+              "production": "planned",
+              "margin": 0.6,
+              "target_stock": 3,
+              "cash_fraction": 0.4,
+              "bid_value_fraction": 0.7,
+              "price_levels": 7,
+              "window": 20,
+              "reward_low": -1000.0,
+              "reward_high": 1000.0,
+              "bid_reward_low": -30.0,
+              "bid_reward_high": 30.0,
+              "eta": 0.1,
+              "gamma": 0.05,
+              "gp_length": 0.25,
+              "gp_noise": 0.01,
+              "gp_beta": 2.0,
+              "gp_history": 128,
+              "demand_decay": 0.97,
+              "demand_optimism": 0.3,
+              "demand_prior": 3.0,
+              "price_elasticity": 0.12,
+              "competition_weight": 0.5,
+              "planner_limit": 256
+            }
+          }
+        ]
+      }
+    }
+  },
+  "configurations": {
+    "baseline": {
+      "market": {
+        "turns": 40,
+        "initial_cash": 150.0,
+        "capacity": 5,
+        "auction": "second",
+        "budget_mode": "replenishing",
+        "fixed_budget": 80.0,
+        "reserve": {
+          "metal": 2.0,
+          "plastic": 1.0
+        },
+        "initial_raw": {
+          "metal": 2,
+          "plastic": 2
+        },
+        "supply": {
+          "metal": 5,
+          "plastic": 5
+        },
+        "recipes": {
+          "widget": {
+            "metal": 1,
+            "plastic": 1
+          },
+          "gadget": {
+            "metal": 2,
+            "plastic": 1
+          }
+        },
+        "production_cost": {
+          "widget": 1.0,
+          "gadget": 1.5
+        },
+        "price_min": 5.0,
+        "price_max": 30.0,
+        "price_tick": 0.01,
+        "customers": 24,
+        "conversion_feedback": true,
+        "holding_cost": 0.02
+      },
+      "agent": {
+        "pricing": "fixed",
+        "buying": "prudent",
+        "production": "greedy",
+        "margin": 0.6,
+        "target_stock": 3,
+        "cash_fraction": 0.4,
+        "bid_value_fraction": 0.7,
+        "price_levels": 7,
+        "window": 20,
+        "reward_low": -1000.0,
+        "reward_high": 1000.0,
+        "bid_reward_low": -30.0,
+        "bid_reward_high": 30.0,
+        "eta": 0.1,
+        "gamma": 0.05,
+        "gp_length": 0.25,
+        "gp_noise": 0.01,
+        "gp_beta": 2.0,
+        "gp_history": 128,
+        "demand_decay": 0.97,
+        "demand_optimism": 0.3,
+        "demand_prior": 3.0,
+        "price_elasticity": 0.12,
+        "competition_weight": 0.5,
+        "planner_limit": 256
+      }
+    },
+    "exp3": {
+      "market": {
+        "turns": 40,
+        "initial_cash": 150.0,
+        "capacity": 5,
+        "auction": "second",
+        "budget_mode": "replenishing",
+        "fixed_budget": 80.0,
+        "reserve": {
+          "metal": 2.0,
+          "plastic": 1.0
+        },
+        "initial_raw": {
+          "metal": 2,
+          "plastic": 2
+        },
+        "supply": {
+          "metal": 5,
+          "plastic": 5
+        },
+        "recipes": {
+          "widget": {
+            "metal": 1,
+            "plastic": 1
+          },
+          "gadget": {
+            "metal": 2,
+            "plastic": 1
+          }
+        },
+        "production_cost": {
+          "widget": 1.0,
+          "gadget": 1.5
+        },
+        "price_min": 5.0,
+        "price_max": 30.0,
+        "price_tick": 0.01,
+        "customers": 24,
+        "conversion_feedback": true,
+        "holding_cost": 0.02
+      },
+      "agent": {
+        "pricing": "exp3ix",
+        "buying": "prudent",
+        "production": "greedy",
+        "margin": 0.6,
+        "target_stock": 3,
+        "cash_fraction": 0.4,
+        "bid_value_fraction": 0.7,
+        "price_levels": 7,
+        "window": 20,
+        "reward_low": -1000.0,
+        "reward_high": 1000.0,
+        "bid_reward_low": -30.0,
+        "bid_reward_high": 30.0,
+        "eta": 0.1,
+        "gamma": 0.05,
+        "gp_length": 0.25,
+        "gp_noise": 0.01,
+        "gp_beta": 2.0,
+        "gp_history": 128,
+        "demand_decay": 0.97,
+        "demand_optimism": 0.3,
+        "demand_prior": 3.0,
+        "price_elasticity": 0.12,
+        "competition_weight": 0.5,
+        "planner_limit": 256
+      }
+    },
+    "gp": {
+      "market": {
+        "turns": 40,
+        "initial_cash": 150.0,
+        "capacity": 5,
+        "auction": "second",
+        "budget_mode": "replenishing",
+        "fixed_budget": 80.0,
+        "reserve": {
+          "metal": 2.0,
+          "plastic": 1.0
+        },
+        "initial_raw": {
+          "metal": 2,
+          "plastic": 2
+        },
+        "supply": {
+          "metal": 5,
+          "plastic": 5
+        },
+        "recipes": {
+          "widget": {
+            "metal": 1,
+            "plastic": 1
+          },
+          "gadget": {
+            "metal": 2,
+            "plastic": 1
+          }
+        },
+        "production_cost": {
+          "widget": 1.0,
+          "gadget": 1.5
+        },
+        "price_min": 5.0,
+        "price_max": 30.0,
+        "price_tick": 0.01,
+        "customers": 24,
+        "conversion_feedback": true,
+        "holding_cost": 0.02
+      },
+      "agent": {
+        "pricing": "gpucb",
+        "buying": "prudent",
+        "production": "greedy",
+        "margin": 0.6,
+        "target_stock": 3,
+        "cash_fraction": 0.4,
+        "bid_value_fraction": 0.7,
+        "price_levels": 7,
+        "window": 20,
+        "reward_low": -1000.0,
+        "reward_high": 1000.0,
+        "bid_reward_low": -30.0,
+        "bid_reward_high": 30.0,
+        "eta": 0.1,
+        "gamma": 0.05,
+        "gp_length": 0.25,
+        "gp_noise": 0.01,
+        "gp_beta": 2.0,
+        "gp_history": 128,
+        "demand_decay": 0.97,
+        "demand_optimism": 0.3,
+        "demand_prior": 3.0,
+        "price_elasticity": 0.12,
+        "competition_weight": 0.5,
+        "planner_limit": 256
+      }
+    },
+    "competitive": {
+      "market": {
+        "turns": 40,
+        "initial_cash": 150.0,
+        "capacity": 5,
+        "auction": "second",
+        "budget_mode": "replenishing",
+        "fixed_budget": 80.0,
+        "reserve": {
+          "metal": 2.0,
+          "plastic": 1.0
+        },
+        "initial_raw": {
+          "metal": 2,
+          "plastic": 2
+        },
+        "supply": {
+          "metal": 5,
+          "plastic": 5
+        },
+        "recipes": {
+          "widget": {
+            "metal": 1,
+            "plastic": 1
+          },
+          "gadget": {
+            "metal": 2,
+            "plastic": 1
+          }
+        },
+        "production_cost": {
+          "widget": 1.0,
+          "gadget": 1.5
+        },
+        "price_min": 5.0,
+        "price_max": 30.0,
+        "price_tick": 0.01,
+        "customers": 24,
+        "conversion_feedback": true,
+        "holding_cost": 0.02
+      },
+      "agent": {
+        "pricing": "inventory",
+        "buying": "planned",
+        "production": "planned",
+        "margin": 0.6,
+        "target_stock": 3,
+        "cash_fraction": 0.4,
+        "bid_value_fraction": 0.7,
+        "price_levels": 7,
+        "window": 20,
+        "reward_low": -1000.0,
+        "reward_high": 1000.0,
+        "bid_reward_low": -30.0,
+        "bid_reward_high": 30.0,
+        "eta": 0.1,
+        "gamma": 0.05,
+        "gp_length": 0.25,
+        "gp_noise": 0.01,
+        "gp_beta": 2.0,
+        "gp_history": 128,
+        "demand_decay": 0.97,
+        "demand_optimism": 0.3,
+        "demand_prior": 3.0,
+        "price_elasticity": 0.12,
+        "competition_weight": 0.5,
+        "planner_limit": 256
+      }
+    }
+  },
+  "jobs": 580,
+  "selection_rule": "maximum development win share; tie-break mean profit",
+  "status": "complete",
+  "selection_sha256": "2d87e0e97851e7918d27ab9dbc53018a7de481b29b2b70fe4cc16323fa9c3e91"
+}

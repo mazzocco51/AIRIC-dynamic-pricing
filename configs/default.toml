@@ -1,0 +1,10 @@
+# Defaults omitted here are defined explicitly in hackathon_kit/config.py.
+[market]
+turns = 40
+auction = "second"
+budget_mode = "replenishing"
+
+[agent]
+pricing = "fixed"
+buying = "prudent"
+production = "greedy"
